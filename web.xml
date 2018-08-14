@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoAddUser</servlet-name>
+    <servlet-class>com.sict.test.servlet.DoAddUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoUpdateUser</servlet-name>
+    <servlet-class>com.sict.test.servlet.DoUpdateUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoDeleteUserById</servlet-name>
+    <servlet-class>com.sict.test.servlet.DoDeleteUserById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DoLogin</servlet-name>
+    <servlet-class>com.sict.test.servlet.DoLogin</servlet-class>
+  </servlet>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+    <servlet-name>DoAddUser</servlet-name>
+    <url-pattern>/DoAddUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoUpdateUser</servlet-name>
+    <url-pattern>/DoUpdateUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoDeleteUserById</servlet-name>
+    <url-pattern>/DoDeleteUserById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoLogin</servlet-name>
+    <url-pattern>/DoLogin</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
